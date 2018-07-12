@@ -14,9 +14,8 @@ Summary: Work with .loom files for single-cell RNA-seq data
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/loompy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/loompy-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/loompy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/loompy-feedstock)
-![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/loompy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/loompy-feedstock)
 
 Current release info
 ====================
