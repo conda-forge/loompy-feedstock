@@ -1,28 +1,26 @@
 {% set name = "loompy" %}
-{% set version = "2.0.8" %}
-{% set sha256 = "131b58c73b017b1b02c6b48cb7482e50be87c336ec52b543c7c37c2662ee60f4" %}
+{% set version = "2.0.10" %}
+{% set sha256 = "fc5d5e42e02fdbc073049db479ca8f2af6763230c8b5942dce6e128bb5359a3c" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
-  skip: True  # [not py36]
-  skip: True  # [win]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3
+    - pip
   run:
-    - python
+    - python >=3
     - numpy
     - scipy
     - h5py

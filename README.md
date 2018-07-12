@@ -14,14 +14,15 @@ Summary: Work with .loom files for single-cell RNA-seq data
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/loompy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/loompy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/loompy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/loompy-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/loompy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/loompy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/loompy/badges/version.svg)](https://anaconda.org/conda-forge/loompy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/loompy/badges/downloads.svg)](https://anaconda.org/conda-forge/loompy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-loompy-green.svg)](https://anaconda.org/conda-forge/loompy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/loompy.svg)](https://anaconda.org/conda-forge/loompy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/loompy.svg)](https://anaconda.org/conda-forge/loompy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/loompy.svg)](https://anaconda.org/conda-forge/loompy) |
 
 Installing loompy
 =================
