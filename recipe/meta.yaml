@@ -1,6 +1,6 @@
 {% set name = "loompy" %}
-{% set version = "2.0.14" %}
-{% set sha256 = "9ffc5e717d7932d72f80a301bef3a9a8d62b84ecf379c4b1ffd750f6b1388e88" %}
+{% set version = "2.0.17" %}
+{% set sha256 = "fa608019cb29569704fefb07486f579e21bfc4dc5949fdf56b8e1b31ee6b2982" %}
 
 package:
   name: {{ name|lower }}
@@ -25,6 +25,7 @@ requirements:
     - scipy
     - h5py
     - typing
+    - pandas
 
 test:
   imports:
