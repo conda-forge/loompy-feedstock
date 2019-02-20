@@ -25,6 +25,7 @@ requirements:
     - scipy
     - h5py
     - typing
+    - pandas
 
 test:
   imports:
