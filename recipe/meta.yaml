@@ -1,6 +1,6 @@
 {% set name = "loompy" %}
-{% set version = "2.0.17" %}
-{% set sha256 = "fa608019cb29569704fefb07486f579e21bfc4dc5949fdf56b8e1b31ee6b2982" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "8e1c2cb76e2ddd70c6423b89724aa45d518082e862c87021674d6b349254cd63" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
