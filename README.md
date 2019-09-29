@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About loompy
 ============
 
@@ -18,8 +14,15 @@ Summary: Work with .loom files for single-cell RNA-seq data
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/loompy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/loompy-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5398&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/loompy-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
