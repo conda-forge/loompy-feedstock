@@ -20,7 +20,7 @@ requirements:
     - python >=3
     - pip
   run:
-    - python >33
+    - python >=3
     - numpy
     - scipy
     - h5py
