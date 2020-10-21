@@ -1,6 +1,6 @@
 {% set name = "loompy" %}
-{% set version = "2.0.17" %}
-{% set sha256 = "fa608019cb29569704fefb07486f579e21bfc4dc5949fdf56b8e1b31ee6b2982" %}
+{% set version = "3.0.6" %}
+{% set sha256 = "58e9763b8ab1af2a4a0e3805d120458b5184fd2b0f3031657ecce33c63ca4c46" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -24,13 +24,13 @@ requirements:
     - numpy
     - scipy
     - h5py
-    - typing
-    - pandas
+    - numba
+    - click
+    - numpy_groupies
 
 test:
   imports:
     - loompy
-
 
 about:
   home: https://github.com/linnarsson-lab/loompy
@@ -44,3 +44,5 @@ about:
 extra:
   recipe-maintainers:
     - gioelelm
+    - dpryan79
+    - Maarten-vd-Sande
