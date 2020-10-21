@@ -20,12 +20,13 @@ requirements:
     - python >=3
     - pip
   run:
-    - python >=3
+    - python >33
     - numpy
     - scipy
     - h5py
-    - typing
-    - pandas
+    - numba
+    - click
+    - numpy_groupies
 
 test:
   imports:
