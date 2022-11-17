@@ -1,6 +1,6 @@
 {% set name = "loompy" %}
-{% set version = "3.0.6" %}
-{% set sha256 = "58e9763b8ab1af2a4a0e3805d120458b5184fd2b0f3031657ecce33c63ca4c46" %}
+{% set version = "3.0.7" %}
+{% set sha256 = "b5cdf7b54734c6bed3a181d11947af70af2c6e0dcadc02fd0e871df232faa8f4" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3
     - pip
   run:
@@ -36,8 +36,8 @@ about:
   home: https://github.com/linnarsson-lab/loompy
   license: BSD-2-Clause
   license_family: BSD
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'  # https://github.com/conda-forge/staged-recipes/issues/4277
-  summary: 'Work with .loom files for single-cell RNA-seq data'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE    # https://github.com/conda-forge/staged-recipes/issues/4277
+  summary: Work with .loom files for single-cell RNA-seq data
   doc_url: http://loompy.org
   dev_url: https://github.com/linnarsson-lab/loompy
 
