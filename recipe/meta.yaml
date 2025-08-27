@@ -1,6 +1,6 @@
 {% set name = "loompy" %}
-{% set version = "3.0.6" %}
-{% set sha256 = "58e9763b8ab1af2a4a0e3805d120458b5184fd2b0f3031657ecce33c63ca4c46" %}
+{% set version = "3.0.8" %}
+{% set sha256 = "c1f48d0bf21aa2bbdeee21a0577553cba9609d9435d7c32b687686bbb5869ca7" %}
 
 package:
   name: {{ name|lower }}
